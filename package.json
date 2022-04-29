@@ -1,0 +1,11 @@
+{
+  "name": "montichello",
+  "version": "1.0.0",
+  "description": "project for company Montichello with adaptive version for different devices",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mariia Tyshkovets",
+  "license": "ISC"
+}

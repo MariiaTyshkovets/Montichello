@@ -1,0 +1,69 @@
+// body {
+//     font-family: 'Montserrat', sans-serif;
+//     // font-family: 'Open Sans', sans-serif;
+//     font-size: $primary-font-size;
+//     line-height: $primary-line-height;
+//     background: url(../img/background-header.png) no-repeat center top;
+//     background-size: 100% auto;
+//     color: $primary-color-dark-blue;
+
+//     // @include tablet {
+//     //     background-size: auto 100vh;
+//     // }
+
+//     // @include phone {
+//     //     background: none;
+//     // }
+// }
+
+// a {
+//     text-decoration: none;
+//     color: inherit;
+// }
+
+// h1, h2, h4 {
+//     color: $primary-color-dark-blue;
+//     font-weight: 700;
+// }
+
+// h1 {
+//     font-size: $heading-1-font-size;
+//     line-height: $heading-1-line-height;
+
+//     @include tablet {
+//         font-size: $heading-2-font-size;
+//         line-height: $heading-2-line-height; 
+//     }
+// }
+
+// h2 {
+//     font-size: $heading-2-font-size;
+//     line-height: $heading-2-line-height;
+
+//     @include tablet {
+//         font-size: $heading-4-font-size;
+//         line-height: $heading-4-line-height;
+//     }
+// }
+
+// h4 {
+//     font-size: $heading-4-font-size;
+//     line-height: $heading-4-line-height;
+// }
+
+// em {
+//     font-style: italic;
+//     color: $primary-color-dark-blue;
+// }
+
+// .wrapper {
+//     margin: 0 13.44%;
+
+//     @include tablet {
+//         margin: 0 30px;
+//     }
+
+//     @include phone {
+//         margin: 0 15px;
+//     }
+// }

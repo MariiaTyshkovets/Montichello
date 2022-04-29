@@ -1,0 +1,33 @@
+@mixin phone {
+    @media (max-width: $phone-width) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: $tablet-width) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (max-width: $desktop-width) {
+        @content;
+    }
+}
+
+
+@mixin hover {
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 4px;
+    }
+}
+
+@mixin hr-default {
+    height: 1px;
+    border: none;
+    color: inherit;
+    background-color: inherit;
+    margin: 0;
+}
