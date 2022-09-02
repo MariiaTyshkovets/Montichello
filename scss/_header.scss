@@ -1,0 +1,89 @@
+.header {
+    height: 100vh;
+    background: linear-gradient(60deg, rgba(85,183,255,1) 20%, rgba(126,90,255,1) 100%);
+    color: $primary-color-white;
+
+    span {
+        font-size: $name-font-size;
+        line-height: $name-line-height;
+        letter-spacing: 5px;
+
+        @include laptop {
+            font-size: $additional-font-size;
+            line-height: $additional-line-height;
+            letter-spacing: 3px;
+        }
+    }
+
+    .wrapper {
+        background-image: url("../img/background-header.png");
+        height: 100vh; 
+    }
+}
+
+.about {
+    padding: 53px 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 54px;
+}
+
+.logo {
+    margin-right: 10px;
+}
+
+.links, .menu {
+    display: flex;
+}
+
+.menu {
+    flex: 1;
+    justify-content: space-evenly;
+}
+
+.menu__item {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: $additional-font-size;
+    line-height: $additional-line-height    ;
+    cursor: pointer;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 9px;
+        height: 9px;
+        border: 1px solid $primary-color-white;
+        border-radius: 50%;
+        top: calc(50% - 4.5px);
+        left: calc(-14px - 4.5px);
+    }
+}
+
+.links > * {
+    margin: 0 10px;
+
+    @include laptop {
+        margin: 0 5px;
+    }
+}
+
+.single-item {
+    width: 900px;
+    
+   
+}
+
+.heading {
+    text-align: center;
+}

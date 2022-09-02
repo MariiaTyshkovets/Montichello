@@ -1,69 +1,92 @@
-// body {
-//     font-family: 'Montserrat', sans-serif;
-//     // font-family: 'Open Sans', sans-serif;
-//     font-size: $primary-font-size;
-//     line-height: $primary-line-height;
-//     background: url(../img/background-header.png) no-repeat center top;
-//     background-size: 100% auto;
-//     color: $primary-color-dark-blue;
+body {
+    font-family: 'Montserrat', sans-serif;
+    // font-family: 'Open Sans', sans-serif;
+    font-size: $primary-font-size;
+    line-height: $primary-line-height;
+    color: $primary-color-dark-blue;
 
-//     // @include tablet {
-//     //     background-size: auto 100vh;
-//     // }
+    @include laptop {
+        background-size: auto 100vh;
+    }
+}
 
-//     // @include phone {
-//     //     background: none;
-//     // }
-// }
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
-// a {
-//     text-decoration: none;
-//     color: inherit;
-// }
+h1, h2, h3, h4 {
+    text-transform: uppercase;
+}
 
-// h1, h2, h4 {
-//     color: $primary-color-dark-blue;
-//     font-weight: 700;
-// }
+h2, h3 {
+    color: $primary-color-dark-blue;
+    font-weight: 700;
+}
 
-// h1 {
-//     font-size: $heading-1-font-size;
-//     line-height: $heading-1-line-height;
+h1 {
+    color: $primary-color-white;
+    font-weight: 700;
+    font-size: $heading-1-font-size;
+    line-height: $heading-1-line-height;
+    margin-bottom: 20px;
 
-//     @include tablet {
-//         font-size: $heading-2-font-size;
-//         line-height: $heading-2-line-height; 
-//     }
-// }
+    @include laptop {
+        font-size: $heading-2-font-size;
+        line-height: $heading-2-line-height; 
+    }
+}
 
-// h2 {
-//     font-size: $heading-2-font-size;
-//     line-height: $heading-2-line-height;
+h3 {
+    font-size: $heading-3-font-size;
+    line-height: $heading-3-line-height;
 
-//     @include tablet {
-//         font-size: $heading-4-font-size;
-//         line-height: $heading-4-line-height;
-//     }
-// }
+    // @include tablet {
+    //     font-size: $heading-4-font-size;
+    //     line-height: $heading-4-line-height;
+    // }
+}
 
-// h4 {
-//     font-size: $heading-4-font-size;
-//     line-height: $heading-4-line-height;
-// }
+h4 {
+    font-size: $heading-4-font-size;
+    line-height: $heading-4-line-height;
+}
 
-// em {
-//     font-style: italic;
-//     color: $primary-color-dark-blue;
-// }
+em {
+    font-style: italic;
+    color: $primary-color-dark-blue;
+}
 
-// .wrapper {
-//     margin: 0 13.44%;
+.wrapper {
+    padding: 0 13.44%;
 
-//     @include tablet {
-//         margin: 0 30px;
-//     }
+    @include laptop {
+        padding: 0 40px;
+    }
 
-//     @include phone {
-//         margin: 0 15px;
-//     }
-// }
+    @include tablet {
+        padding: 0 30px;
+    }
+
+    @include phone {
+        padding: 0 15px;
+    }
+}
+
+hr {
+    @include hr-default;
+}
+
+button {
+    font-size: $additional-font-size;
+    line-height: $additional-line-height;
+    border: 1px solid $primary-color-dark-blue;
+    height: 50px;
+    width: 190px;
+    background-color: $primary-color-white;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $background-color;
+    }
+}
