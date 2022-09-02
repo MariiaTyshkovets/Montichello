@@ -1,0 +1,110 @@
+.projects {
+    .wrapper {
+        padding-top: 100px;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.project__section {
+    width: 100%;
+    display: grid;
+    gap: 70px;
+    margin: 140px 0;
+    align-items: flex-end;
+
+    @include laptop {
+        gap: 50px;
+    }
+
+    h3 {
+        margin-bottom: 19px;
+    }
+
+    p {
+        margin-bottom: 40px;
+    }
+
+    button {
+        margin-bottom: 60px;
+    }
+}
+
+.project1 {
+    grid-template-columns: 500px 1fr;
+}
+
+.project2 {
+    grid-template-columns: 1fr 51%;
+}
+
+.location {
+    font-family: 'Open Sans', sans-serif;
+    line-height: $location-line-height;
+    font-size: $location-font-size;
+    font-style: italic;
+}
+
+.project1__img {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: " ";
+        border: 1px solid $primary-color-light-blue;
+        background-color: $primary-color-light-blue;
+        width: 100%;
+        height: 100%;
+        left: -13.44vw;
+        bottom: 50px;
+        z-index: -1;
+
+        @include laptop {
+            left: -40px;
+            bottom: 40px;
+        }
+    
+        @include tablet {
+            left: -30px;
+            bottom: 30px;
+        }
+    
+        @include phone {
+            left: -15px;
+            bottom: 15px;
+        }
+    }
+}
+
+.project2__img {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: " ";
+        border: 1px solid $icon-color-violet;
+        background-color: $icon-color-violet;
+        width: 100%;
+        height: 100%;
+        right: -10vw;
+        bottom: 50px;
+        z-index: -1;
+
+        @include laptop {
+            right: -40px;
+            bottom: 40px;
+        }
+    
+        @include tablet {
+            right: -30px;
+            bottom: 30px;
+        }
+    
+        @include phone {
+            right: -15px;
+            bottom: 15px;
+        }
+    }
+}
