@@ -433,7 +433,7 @@ button:hover {
   background-color: var(--icon-color-violet, #7E5AFF);
   width: 100%;
   height: 100%;
-  right: -13.44vw;
+  right: -10vw;
   bottom: 50px;
   z-index: -1;
 }
